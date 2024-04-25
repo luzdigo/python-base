@@ -20,10 +20,12 @@ __version__ = "0.0.1"
 
 import os
 
-langs = os.getenv ("LANG", "en_US") [:5]
+langs = os.getenv ("LANG", "en_US") [:5] 
 msg = "Hello, World"
 
 if langs == "en_US":
-    print ("Hello, World")
+    msg = "Hello, World"
 elif langs == "pt_BR":
-    print ("Olá, mundo")
+    msg = "Olá, mundo"
+
+print (msg)
